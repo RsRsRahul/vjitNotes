@@ -2,16 +2,14 @@ import * as React from 'react';
 import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 
 export default function SideBar() {
-  const [open1, setOpen1] = React.useState(true);
-  const [open2, setOpen2] = React.useState(true);
-  const [open3, setOpen3] = React.useState(true);
-  const [open4, setOpen4] = React.useState(true);
+  const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+  const [open4, setOpen4] = React.useState(false);
 
   const handleClickYear1 = () => {
     setOpen1(!open1);
@@ -40,7 +38,6 @@ export default function SideBar() {
     >
       <ListItemButton onClick={handleClickYear1}>
         <ListItemText primary="1st YEAR" />
-        {open1 ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open1} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -54,7 +51,6 @@ export default function SideBar() {
       </Collapse>
       <ListItemButton onClick={handleClickYear2}>
         <ListItemText primary="2nd YEAR" />
-        {open2 ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open2} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -68,7 +64,6 @@ export default function SideBar() {
       </Collapse>
       <ListItemButton onClick={handleClickYear3}>
         <ListItemText primary="3rd YEAR" />
-        {open3 ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open3} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -82,7 +77,6 @@ export default function SideBar() {
       </Collapse>
       <ListItemButton onClick={handleClickYear4}>
         <ListItemText primary="4th YEAR" />
-        {open4 ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open4} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
