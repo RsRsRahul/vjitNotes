@@ -4,7 +4,7 @@ import DataDisplay from './dataDisplay';
 import SideBar from './sideBar';
 import { Grid } from '@mui/material';
 import NavBar from './navBar';
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -18,7 +18,11 @@ root.render(
       <SideBar />
      </Grid>
      <Grid item>
-      <DataDisplay/>
+      <BrowserRouter>
+      <Routes>
+        <Route exact path="" element={< DataDisplay/>} />
+      </Routes>
+      </BrowserRouter>
      </Grid>
     </Grid>
   </>

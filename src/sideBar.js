@@ -1,9 +1,5 @@
 import * as React from 'react';
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
+import {ListSubheader,List,ListItemButton,ListItemText,Collapse,Typography} from '@mui/material';
 
 export default function SideBar() {
   const [open1, setOpen1] = React.useState(false);
@@ -31,60 +27,60 @@ export default function SideBar() {
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
-        <ListSubheader component="div" id="nested-list-subheader" style={{textAlign:"center"}}>
-         Years
+        <ListSubheader component="div" id="nested-list-subheader" style={{paddingLeft:"2rem"}}>
+         <Typography variant="h6" >Years</Typography>
         </ListSubheader>
       }
     >
       <ListItemButton onClick={handleClickYear1}>
-        <ListItemText primary="1st YEAR" style={{paddingLeft:"1rem"}}/>
+        <ListItemText primary="1st Year" style={{paddingLeft: "1rem"}} />
       </ListItemButton>
       <Collapse in={open1} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 1" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="1st Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 2" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="2nd Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear2}>
-        <ListItemText primary="2nd YEAR" style={{paddingLeft:"1rem"}}/>
+        <ListItemText primary="2nd Year" style={{paddingLeft:"1rem"}}/>
       </ListItemButton>
       <Collapse in={open2} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 3" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="3rd Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 4" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="4th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear3}>
-        <ListItemText primary="3rd YEAR" style={{paddingLeft:"1rem"}}/>
+        <ListItemText primary="3rd Year" style={{paddingLeft:"1rem"}}/>
       </ListItemButton>
       <Collapse in={open3} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText primary="SEM 5" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="5th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 6" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="6th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear4}>
-        <ListItemText primary="4th YEAR" style={{paddingLeft:"1rem"}}/>
+        <ListItemText primary="4th Year" style={{paddingLeft:"1rem"}}/>
       </ListItemButton>
       <Collapse in={open4} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="SEM 7" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="7th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText primary="SEM 8" style={{paddingLeft:"1rem"}}/>
+            <ListItemText primary="8th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
         </List>
       </Collapse>
