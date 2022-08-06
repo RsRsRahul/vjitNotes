@@ -1,6 +1,5 @@
-export const data =[
+ const data =[
     {
-        "id":1,
         "subjects":[
             "BASIC ELECTIRCAL ENGINEERING",
             "CHEMISTRY",
@@ -10,7 +9,6 @@ export const data =[
         ]
     },
     {
-        "id":2,
         "subjects":[
             "APPLIED PHYSICS",
             "PPS-II",
@@ -20,7 +18,6 @@ export const data =[
         ]
     },
     {
-        "id":3,
         "subjects":[
             "P&S",
             "EDC",
@@ -32,7 +29,6 @@ export const data =[
         ]
     },
     {
-        "id":4,
         "subjects":[
             "DAA",
             "COMPUTER ORGANIZATION",
@@ -44,7 +40,6 @@ export const data =[
         ]
     },
     {
-        "id":5,
         "subjects":[
             "FLAT",
             "LINUX PROGRAMMING",
@@ -55,7 +50,6 @@ export const data =[
         ]
     },
     {
-        "id":6,
         "subjects":[
             "ARTIFICIAL INTELLIGENCE",
             "MEFA",
@@ -68,7 +62,6 @@ export const data =[
         ]
     },
     {
-        "id":7,
         "subjects":[
             "MAD",
             "CLOUD COMPUTING",
@@ -76,3 +69,4 @@ export const data =[
         ]
     }
 ]
+export default data;

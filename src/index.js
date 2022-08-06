@@ -14,17 +14,20 @@ root.render(
       </Grid>
     </Grid>
     <Grid container direction="row">
+    <BrowserRouter>
      <Grid item lg={2} xl={2} style={{border:"5px black",height:"100vh" }}>
       <SideBar />
      </Grid>
-     <Grid item>
-      <BrowserRouter>
+     <Grid item xs={6}>
       <Routes>
-        <Route exact path="" element={< DataDisplay/>} />
+        <Route exact path=":year">
+          <Route path=":sem" element={<DataDisplay  authPath="/year:/:sem"/> }/>
+        </Route>
       </Routes>
+      </Grid>
       </BrowserRouter>
      </Grid>
-    </Grid>
+
   </>
 );
 

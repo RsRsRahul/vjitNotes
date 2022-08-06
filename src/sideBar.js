@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {ListSubheader,List,ListItemButton,ListItemText,Collapse,Typography} from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 export default function SideBar() {
   const [open1, setOpen1] = React.useState(false);
@@ -20,7 +22,6 @@ export default function SideBar() {
     setOpen4(!open4);
   };
 
-
   return (
     <List
       sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
@@ -37,12 +38,16 @@ export default function SideBar() {
       </ListItemButton>
       <Collapse in={open1} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+          <Link to="/year1/sem1" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="1st Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
+          <Link to="/year1/sem2" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="2nd Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear2}>
@@ -50,12 +55,16 @@ export default function SideBar() {
       </ListItemButton>
       <Collapse in={open2} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+        <Link to="/year2/sem3" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="3rd Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
+          <Link to="/year2/sem4" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="4th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear3}>
@@ -63,12 +72,16 @@ export default function SideBar() {
       </ListItemButton>
       <Collapse in={open3} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+        <Link to="/year3/sem5" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }} >
             <ListItemText primary="5th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
+          <Link to="/year3/sem6" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="6th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
+          </Link>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickYear4}>
@@ -76,12 +89,11 @@ export default function SideBar() {
       </ListItemButton>
       <Collapse in={open4} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+        <Link to="/year4/sem7" style={{"textDecoration":"none"}}>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="7th Semester" style={{paddingLeft:"1rem"}}/>
           </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText primary="8th Semester" style={{paddingLeft:"1rem"}}/>
-          </ListItemButton>
+          </Link>
         </List>
       </Collapse>
     </List>
