@@ -4,11 +4,13 @@ import DataDisplay from './dataDisplay';
 import SideBar from './sideBar';
 import { Grid } from '@mui/material';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import NavBar from './navbar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Grid>
       <Grid item xs={12}>
+        <NavBar />
       </Grid>
     </Grid>
     <Grid container direction="row">
@@ -16,7 +18,7 @@ root.render(
      <Grid item lg={2} xl={2} style={{border:"5px black",height:"100vh" }}>
       <SideBar />
      </Grid>
-     <Grid item xs={6}>
+     <Grid item xs={8}>
       <Routes>
         <Route exact path=":year">
           <Route path=":sem" element={<DataDisplay  authPath="/:year/:sem"/> }/>

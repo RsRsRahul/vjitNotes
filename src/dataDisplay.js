@@ -9,7 +9,7 @@ const DataDisplay = () => {
     var se = "sem"+i
     if(sem === se){
       for(const value of data[i-1].subjects){
-      items.push(<li style={{"paddingTop":"1rem"}}><Button variant='outlined'>{value}</Button></li>)
+      items.push(<li style={{"paddingTop":"1rem"}}><Button variant='text'>{value}</Button></li>)
       }
     }
   }
