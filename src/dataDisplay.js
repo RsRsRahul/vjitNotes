@@ -9,7 +9,11 @@ const DataDisplay = () => {
     var se = "sem"+i
     if(sem === se){
       for(const value of data[i-1].subjects){
+<<<<<<< HEAD
       items.push(<li style={{"paddingTop":"1rem"}}><Button variant='text'>{value}</Button></li>)
+=======
+      items.push(<li style={{"paddingTop":"1rem"}}><Button variant='outlined'>{value}</Button></li>)
+>>>>>>> 0f48e614aadb1d53df40093ab0a1afadb2753f41
       }
     }
   }
@@ -18,7 +22,11 @@ const DataDisplay = () => {
       <Grid item 
       style={{"textAlign":"center"}}
       >
+<<<<<<< HEAD
       <Typography>{sem}</Typography>
+=======
+      <Typography>Subjects</Typography>
+>>>>>>> 0f48e614aadb1d53df40093ab0a1afadb2753f41
       </Grid>
       <Grid item 
       style={{"textAlign":"center"}}
