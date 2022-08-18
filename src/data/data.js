@@ -1,3 +1,4 @@
+
  const data =[
     {
         "subjects":[
@@ -68,5 +69,6 @@
             "E-COMMERCE"
         ]
     }
+
 ]
 export default data;
