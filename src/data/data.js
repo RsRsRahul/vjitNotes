@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 0f48e614aadb1d53df40093ab0a1afadb2753f41
  const data =[
     {
         "subjects":[
@@ -73,16 +69,6 @@
             "E-COMMERCE"
         ]
     }
+
 ]
-<<<<<<< HEAD
 export default data;
-
-
-
-
-
-
-
-=======
-export default data;
->>>>>>> 0f48e614aadb1d53df40093ab0a1afadb2753f41
